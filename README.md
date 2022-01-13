@@ -1,4 +1,4 @@
-## My Project
+## Contrastive Controlled MT
 
 TODO: Fill this README out!
 
