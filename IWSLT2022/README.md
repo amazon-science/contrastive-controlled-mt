@@ -1,6 +1,6 @@
 ## Formality-annotated data
 
-This repository contains the dataset and benchmark used for the special task on [Formality Control for SLT](https://iwslt.org/2022/formality).
+This repository contains the dataset and benchmark used for the shared task on [Formality Control for SLT](https://iwslt.org/2022/formality).
 The targeted train and test sets comprise of source segments paired with two contrastive reference translations, one for each formality level (informal and formal), and phrase-level annotations.
 Formality distinctions are expressed by the use of grammatical register or honorific language.
 Table 1 gives examples of annotated contrastive translations from the dataset and Table 2 reports the number of source segments used for training and evaluation.
@@ -32,7 +32,7 @@ Table 1 gives examples of annotated contrastive translations from the dataset an
 |zero-shot	|EN-IT	|0	|600		|
 |zero-shot	|EN-RU	|0	|600		|
 
-This special task will offer two training scenarios: **supervised** and **zero-shot**. For the **supervised** training scenario, participants can use the labeled training set for training and development. For the **zero-shot** task, we will release only test data.
+This shared task will offer two training scenarios: **supervised** and **zero-shot**. For the **supervised** training scenario, participants can use the labeled training set for training and development. For the **zero-shot** task, we will release only test data.
 
 ### Dataset structure
 The train and test splits are found in the `data/` directory: `data/train` and `data/test`. 
