@@ -50,7 +50,7 @@ formality level is one of: `formal` or `informal`.
 
 ## Evaluation
 
-We've provided `scorer.py` for computing the matched-formal and matched-informal accuracy metrics given a system output. Requires python>=3.7.
+We will provide and evaluation sript `scorer.py` (COMING SOON) for computing the `matched-formal` and `matched-informal` accuracy scores for given a system output. Requires python>=3.7.
 
 ### Command-line Usage
 
