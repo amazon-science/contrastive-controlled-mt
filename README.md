@@ -1,6 +1,7 @@
-## Contrastive Controlled MT
+## Dataset and Benchmark for IWSLT 2022 Shared Task on Formality Control for SLT
 
-TODO: Fill this README out!
+This repository contains the dataset and benchmark used for the special task on [Formality Control for SLT](https://iwslt.org/2022/formality).
+Participant to the shared task can find the annotated dataset and evaluation script under [IWSLT2022][IWSLT2022]. 
 
 Be sure to:
 
@@ -14,5 +15,5 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 
 ## License
 
-This library is licensed under the CDLA-Sharing-1.0 License.
+This project is licensed under the CDLA-Sharing-1.0 License.
 
