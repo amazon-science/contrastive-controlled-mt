@@ -93,6 +93,26 @@ python scorer.py \
 Formal Acc: 0.160, Informal Acc: 0.840
 ```
 
+## Pre-trained models
+
+Pre-trained baseline models are available on the task's GitHub repository.
+See the "Assets" section of the [releases page](https://github.com/amazon-research/contrastive-controlled-mt/releases).
+
+Each model is trained on open datasets using the [Sockeye 3 PyTorch NMT toolkit](https://github.com/awslabs/sockeye). For further details see [Pre-trained models](./models/README.md#setup)
+
+### License
+
+If you use any of the pre-trained models, please note that the datasets that they were trained on come with the following licensing:
+
+|Dataset	|Language pair	|	License	|
+|---	|---	|---		|
+|Paracrawl v9 |EN-DE,ES	| CC0
+|CCMatrix |EN-HI	| CC0
+|Wikimatrix	|EN-JA	|CC BY SA 3.0
+|JESC  |EN-JA	| CC BY SA 4.0
+
+Note, EN-JA models were also trained on the news commentary dataset and users should cite [6] in addition to [4,5] if using the EN-JA models. Please cite [1,2] if you use the EN-HI model and [3] if you use the EN-DE,ES models.
+
 ## Citation
 
 If you are a participant in the IWSLT shared task on Formality Control for SLT, or are otherwise using the resources 
@@ -110,3 +130,17 @@ If you use the [topical-chat](https://github.com/alexa/Topical-Chat) part of the
   url={http://dx.doi.org/10.21437/Interspeech.2019-3079}
 }
 ```
+
+## References
+
+[1] Angela Fan, Shruti Bhosale, Holger Schwenk, Zhiyi Ma, Ahmed El-Kishky, Siddharth Goyal, Mandeep Baines, Onur Celebi, Guillaume Wenzek, Vishrav Chaudhary, Naman Goyal, Tom Birch, Vitaliy Liptchinsky, Sergey Edunov, Edouard Grave, Michael Auli, and Armand Joulin. [Beyond English-Centric Multilingual Machine Translation](https://arxiv.org/abs/2010.11125)
+
+[2] Holger Schwenk, Guillaume Wenzek, Sergey Edunov, Edouard Grave and Armand Joulin, [CCMatrix: Mining Billions of High-Quality Parallel Sentences on the WEB](https://arxiv.org/abs/1911.04944)
+
+[3] Marta Bañón, Pinzhen Chen, Barry Haddow, Kenneth Heafield, Hieu Hoang, Miquel Esplà-Gomis, Mikel L. Forcada, Amir Kamran, Faheem Kirefu, Philipp Koehn, Sergio Ortiz Rojas, Leopoldo Pla Sempere, Gema Ramírez-Sánchez, Elsa Sarrías, Marek Strelec, Brian Thompson, William Waites, Dion Wiggins, Jaume Zaragoza, [ParaCrawl: Web-Scale Acquisition of Parallel Corpora](https://aclanthology.org/2020.acl-main.417/)
+
+[4] Pryzant, R. and Chung, Y. and Jurafsky, D. and Britz , D. [JESC: Japanese-English Subtitle Corpus](https://arxiv.org/abs/1710.10639)
+
+[5] Holger Schwenk, Vishrav Chaudhary, Shuo Sun, Hongyu Gong and Paco Guzman,[WikiMatrix: Mining 135M Parallel Sentences in 1620 Language Pairs from Wikipedia](https://arxiv.org/abs/1907.05791) arXiv, July 11 2019.
+
+[6] J. Tiedemann, 2012, [Parallel Data, Tools and Interfaces in OPUS.](https://opus.nlpl.eu/News-Commentary.php) In Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC 2012)
