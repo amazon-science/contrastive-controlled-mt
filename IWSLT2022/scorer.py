@@ -141,7 +141,7 @@ def predict_formality_label(
     return "OTHER"
 
 def _read_lines(file: str) -> List[str]:
-    with open(file, "r") as file:
+    with open(file, "r", encoding="utf-8") as file:
         raw_text = [line.strip() for line in file.readlines()]
 
     return raw_text
