@@ -100,6 +100,17 @@ See the "Assets" section of the [releases page](https://github.com/amazon-resear
 
 Each model is trained on open datasets using the [Sockeye 3 PyTorch NMT toolkit](https://github.com/awslabs/sockeye). For further details see [Pre-trained models](./models/README.md#setup)
 
+Baseline model performance on generic test sets is provided below:
+
+|Language Pair	| WMT	|	TED	|
+|---	|---	|---		|
+|EN-DE |42.1	| 33.0
+|EN-ES |35.9	| 37.0
+|EN-HI |10.1	| -
+|EN-IT |31.8  | 31.7
+|EN-JA |18.9	|14.5
+|EN-RU | 19.8 | 19.5
+
 ### License
 
 If you use any of the pre-trained models, please note that the datasets that they were trained on come with the following licensing:
