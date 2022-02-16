@@ -117,7 +117,7 @@ If you use any of the pre-trained models, please note that the datasets that the
 
 |Dataset	|Language pair	|	License	|
 |---	|---	|---		|
-|Paracrawl v9 |EN-DE,ES	| CC0
+|Paracrawl v9 |EN-DE,ES,IT,RU	| CC0
 |CCMatrix |EN-HI	| CC0
 |Wikimatrix	|EN-JA	|CC BY SA 3.0
 |JESC  |EN-JA	| CC BY SA 4.0
