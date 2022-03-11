@@ -106,7 +106,7 @@ Baseline model performance on generic test sets is provided below:
 |---	|---	|---		|
 |EN-DE |42.1	| 33.0
 |EN-ES |35.9	| 37.0
-|EN-HI |10.1	| -
+|EN-HI | 22.3	| -
 |EN-IT |31.8  | 31.7
 |EN-JA |18.9	|14.5
 |EN-RU | 19.8 | 19.5
