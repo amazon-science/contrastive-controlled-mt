@@ -1,6 +1,8 @@
 ## CoCoA-MT: A Dataset and Benchmark for Contrastive Controlled MT with Application to Formality
 
-This repository contains the CoCoA-MT dataset and benchmark for formality control.
+The machine translation (MT) task is typically formulated as that of returning a single translation for an input segment. However, in many cases, multiple different translations are valid and the appropriate translation may depend on the intended target audience, characteristics of the speaker, or even the relationship between speakers. Specific problems arise when dealing with honorifics, particularly translating from English into languages with formality markers. For example, the sentence "Are you sure?" can be translated in German as "Sind Sie sich sicher?" (formal register) or "Bist du dir sicher?" (informal). Using wrong or inconsistent tone may be perceived as inappropriate or jarring for users of certain cultures and demographics. This work addresses the problem of learning to control target language attributes, in this case formality, from a small amount of labeled contrastive data. We introduce an annotated dataset (CoCoA-MT) and an associated evaluation metric for training and evaluating formality-controlled MT models for six diverse target languages.
+
+## IWSLT 2022 shared task 
 Participants to the [Formality Control for SLT](https://iwslt.org/2022/formality) shared task can find the annotated dataset and evaluation script under [IWSLT2022/](/IWSLT2022/). 
 
 
