@@ -1,7 +1,7 @@
-## Shared Task on Formality Control for SLT
+## CoCoA-MT: A Dataset and Benchmark for Contrastive Controlled MT with Application to Formality
 
-This repository contains the dataset and benchmark used for the shared task on [Formality Control for SLT](https://iwslt.org/2022/formality).
-Participant to the shared task can find the annotated dataset and evaluation script under [IWSLT2022/](/IWSLT2022/). 
+This repository contains the CoCoA-MT dataset and benchmark for formality control.
+Participants to the [Formality Control for SLT](https://iwslt.org/2022/formality) shared task can find the annotated dataset and evaluation script under [IWSLT2022/](/IWSLT2022/). 
 
 
 ## Security
