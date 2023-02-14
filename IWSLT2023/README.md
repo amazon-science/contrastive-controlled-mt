@@ -42,6 +42,20 @@ where the target language `tl` is one of: `ko, vi, pt, ru`; \
 domain refers to the data sources and is one of: `topical-chat`, `telephony`; \
 formality level is one of: `formal` or `informal`.
 
+### Additional Resources
+
+We release a multilingual classifier trained to predict the formality of a text for the language pairs: EN-KO, EN-VI, EN-RU and EN-PT. We finetune [xlm-roberta-base](https://huggingface.co/xlm-roberta-base) model on human-written formal and informal text following the setup from [Briakou et al., EMNLP 2021](https://aclanthology.org/2021.emnlp-main.100.pdf). The model can be used as follows (after installing [transformers](https://pypi.org/project/transformers/) and [datasets](https://pypi.org/project/datasets/)):
+
+```python
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, TextClassificationPipeline
+import torch
+model_name = "xlm-roberta-base"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSequenceClassification.from_pretrained(<path to the downloaded model directory>)
+pipe = TextClassificationPipeline(model=model, tokenizer=tokenizer)
+scores = pipe(text, return_all_scores=True)
+```
+
 ## Citation
 
 If you are a participant in the IWSLT shared task on Formality Control for SLT, or are otherwise using the resources 
