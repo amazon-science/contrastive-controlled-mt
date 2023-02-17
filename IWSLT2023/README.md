@@ -44,7 +44,7 @@ formality level is one of: `formal` or `informal`.
 
 ### Additional Resources
 
-We release a multilingual classifier trained to predict the formality of a text for the language pairs: EN-KO, EN-VI, EN-RU and EN-PT. We finetune [xlm-roberta-base](https://huggingface.co/xlm-roberta-base) model on human-written formal and informal text following the setup from [Briakou et al., EMNLP 2021](https://aclanthology.org/2021.emnlp-main.100.pdf). The model can be used as follows (after installing [transformers](https://pypi.org/project/transformers/)):
+We [release](https://github.com/amazon-science/contrastive-controlled-mt/releases/tag/classifier-v1.0.0) a multilingual classifier trained to predict the formality of a text for the language pairs: EN-KO, EN-VI, EN-RU and EN-PT. We finetune [xlm-roberta-base](https://huggingface.co/xlm-roberta-base) model on human-written formal and informal text following the setup from [Briakou et al., EMNLP 2021](https://aclanthology.org/2021.emnlp-main.100.pdf). The model can be used as follows (after installing [transformers](https://pypi.org/project/transformers/)):
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, TextClassificationPipeline
