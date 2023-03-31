@@ -44,18 +44,17 @@ formality level is one of: `formal` or `informal`.
 
 ### Additional Resources
 
-We [release](https://github.com/amazon-science/contrastive-controlled-mt/releases/tag/classifier-v1.0.0) a multilingual classifier trained to predict the formality of a text for the language pairs: EN-KO, EN-VI, EN-RU and EN-PT. We finetune [xlm-roberta-base](https://huggingface.co/xlm-roberta-base) model on human-written formal and informal text following the setup from [Briakou et al., EMNLP 2021](https://aclanthology.org/2021.emnlp-main.100.pdf). The model can be used as follows (after installing [transformers](https://pypi.org/project/transformers/)):
+We [release](https://github.com/amazon-science/contrastive-controlled-mt/releases/tag/classifier-v1.0.0) a multilingual classifier trained to predict the formality of a text for the language pairs: EN-KO, EN-VI, EN-RU and EN-PT. We finetune [xlm-roberta-base](https://huggingface.co/xlm-roberta-base) model on human-written formal and informal text following the setup from [Briakou et al., EMNLP 2021](https://aclanthology.org/2021.emnlp-main.100.pdf). The returned scores are probabilities corresponding to each label with `label0` and `label1` corresponding to the `informal` and `formal` classes respectively.
 
-```python
-from transformers import AutoTokenizer, AutoModelForSequenceClassification, TextClassificationPipeline
-import torch
-model_name = "xlm-roberta-base"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForSequenceClassification.from_pretrained(<path to the downloaded model directory>)
-pipe = TextClassificationPipeline(model=model, tokenizer=tokenizer)
-scores = pipe(text, return_all_scores=True)
+Assuming the classifier has been extracted to `/tmp/`, the evaluation can be performed as follows (after installing [transformers](https://pypi.org/project/transformers/)):
+
+```bash
+python formality_classifier.py -m /tmp/xlmr-classifier -t formal -i /path/to/formality-control-1.formal.ko
 ```
-The returned scores are probabilities corresponding to each label with label0 and label1 corresponding to the informal and formal classes respectively.
+
+For a full list of options including device settings and batch size, see `python formality_classifier.py --help`.
+
+
 
 ## Citation
 
