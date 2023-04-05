@@ -20,7 +20,7 @@ if __name__ == "__main__":
     model_name = args.model_name
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-    expected_label = "label0" if args.target_formality == "informal" else "label1"
+    expected_label = "LABEL_0" if args.target_formality == "informal" else "LABEL_1"
 
     model = AutoModelForSequenceClassification.from_pretrained(model_name)
     
